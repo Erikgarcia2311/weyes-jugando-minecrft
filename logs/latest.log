@@ -1,0 +1,47 @@
+[00:26:27] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[00:26:27] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[00:26:27] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[00:26:27] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[00:26:29] [Server thread/INFO]: Starting minecraft server version 1.14.4
+[00:26:29] [Server thread/INFO]: Loading properties
+[00:26:29] [Server thread/INFO]: Default game type: SURVIVAL
+[00:26:29] [Server thread/INFO]: Generating keypair
+[00:26:29] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:26:29] [Server thread/INFO]: Using default channel type
+[00:26:31] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[00:26:31] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[00:26:31] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[00:26:31] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[00:26:31] [Server thread/INFO]: Preparing level "world"
+[00:26:31] [Server thread/INFO]: Reloading ResourceManager: Default
+[00:26:31] [Server thread/INFO]: Loaded 6 recipes
+[00:26:32] [Server thread/INFO]: Loaded 811 advancements
+[00:26:32] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[00:26:34] [Server thread/INFO]: Preparing spawn area: 0%
+[00:26:34] [Server thread/INFO]: Preparing spawn area: 0%
+[00:26:34] [Server thread/INFO]: Preparing spawn area: 0%
+[00:26:34] [Server thread/INFO]: Preparing spawn area: 0%
+[00:26:34] [Server thread/INFO]: Preparing spawn area: 0%
+[00:26:34] [Server thread/INFO]: Time elapsed: 2265 ms
+[00:26:34] [Server thread/INFO]: Done (3.513s)! For help, type "help"
+[00:40:07] [Server thread/INFO]: Mavata[/200.68.149.216:15360] logged in with entity id 180 at (-17.699999988079067, 63.0, -328.99499211392936)
+[00:40:07] [Server thread/INFO]: Mavata joined the game
+[00:41:37] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2352ms or 47 ticks behind
+[01:11:39] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2044ms or 40 ticks behind
+[01:41:41] [Server thread/WARN]: Mavata moved too quickly! 4.0659874170311525,1.1661092609382138,-9.142498798274971
+[01:41:41] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2937ms or 58 ticks behind
+[01:51:44] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2629ms or 52 ticks behind
+[02:14:01] [Server thread/INFO]: Stopping server
+[02:14:02] [Server thread/INFO]: Saving players
+[02:14:02] [Server thread/INFO]: Mavata lost connection: Internal Exception: java.lang.StackOverflowError
+[02:14:02] [Server thread/INFO]: Mavata left the game
+[02:14:02] [Server thread/INFO]: Saving worlds
+[02:14:02] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[02:14:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[02:14:03] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_nether
+[02:14:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02:14:03] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_end
+[02:14:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02:14:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[02:14:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02:14:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved

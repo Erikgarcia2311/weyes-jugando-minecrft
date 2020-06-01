@@ -1,0 +1,98 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 4/9/20 2:12 AM
+Description: Exception while updating neighbours
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at vk.a(SourceFile:1037)
+	at bhr.a(SourceFile:233)
+	at bog.a(SourceFile:237)
+	at bvt.a(SourceFile:245)
+	at bhr.a(SourceFile:353)
+	at bhr.b(SourceFile:321)
+	at bmm.a(SourceFile:122)
+	at bmm.a(SourceFile:90)
+	at bmm.b(SourceFile:66)
+	at bvt.a(SourceFile:265)
+	at vk.b(SourceFile:565)
+	at bie.b(SourceFile:87)
+	at vk.a(SourceFile:320)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:835)
+	at uk.b(SourceFile:343)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:774)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:642)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.HashMap$HashIterator.nextNode(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at vk.a(SourceFile:1037)
+	at bhr.a(SourceFile:233)
+	at bog.a(SourceFile:237)
+	at bvt.a(SourceFile:245)
+
+-- Block being updated --
+Details:
+	Source block type: ID #minecraft:oak_pressure_plate (block.minecraft.oak_pressure_plate // bqu)
+	Block: Block{minecraft:oak_door}[facing=south,half=lower,hinge=left,open=true,powered=true]
+	Block location: World: (-762,73,243), Chunk: (at 6,4,3 in -48,15; contains blocks -768,0,240 to -753,255,255), Region: (-2,0; contains chunks -64,0 to -33,31, blocks -1024,0,0 to -513,255,511)
+Stacktrace:
+	at bhr.a(SourceFile:353)
+	at bhr.b(SourceFile:321)
+	at bmm.a(SourceFile:122)
+	at bmm.a(SourceFile:90)
+	at bmm.b(SourceFile:66)
+	at bvt.a(SourceFile:265)
+	at vk.b(SourceFile:565)
+
+-- Block being ticked --
+Details:
+	Block location: World: (-762,73,244), Chunk: (at 6,4,4 in -48,15; contains blocks -768,0,240 to -753,255,255), Region: (-2,0; contains chunks -64,0 to -33,31, blocks -1024,0,0 to -513,255,511)
+Stacktrace:
+	at bie.b(SourceFile:87)
+	at vk.a(SourceFile:320)
+
+-- Affected level --
+Details:
+	All players: 1 total; [vl['necro_psique'/51092, l='world', x=-728.64, y=70.00, z=210.85]]
+	Chunk stats: ServerChunkCache: 3234
+	Level dimension: minecraft:overworld
+	Level name: world
+	Level seed: 3761286335940163081
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: {}
+	Level spawn location: World: (16,72,-32), Chunk: (at 0,4,0 in 1,-2; contains blocks 16,0,-32 to 31,255,-17), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 6168623 game time, 8178703 day time
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 18105 (now: false), thunder time: 3552 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.b(SourceFile:835)
+	at uk.b(SourceFile:343)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:774)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:642)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.14.4
+	Minecraft Version ID: 1.14.4
+	Operating System: Windows 10 (x86) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 613465160 bytes (585 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	CPUs: 4
+	JVM Flags: 2 total; -Xms1G -Xmx1G
+	Player Count: 1 / 20; [vl['necro_psique'/51092, l='world', x=-728.64, y=70.00, z=210.85]]
+	Data Packs: vanilla
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
